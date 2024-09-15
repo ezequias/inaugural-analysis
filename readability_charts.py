@@ -18,6 +18,7 @@
 #   limitations under the License.
 #
 
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -75,12 +76,20 @@ metrics = [
 
 # Go though all command-line arguments adding a record for each
 # analyzed speech
+path = 'C:/projects/inaugural-analysis/'
+files = []
+for r, d, f in os.walk(path):
+    for file in f:
+        if '.txt' in file:
+            files.append(os.path.join(r, file))
+
 records = []
-for file_name in sys.argv[1:]:
+#sys.argv[1:]: 
+for file_name in files: 
     with open(file_name, 'r') as myfile:
         data = myfile.read().replace('\n', ' ')
         # Parse a speech file name of the form: First M. Last-YEAR.txt
-        parts = re.search(r'speeches/((.)[^ ]*( (.)\.)? ([^ ]+))-(\d\d\d\d).txt', file_name)
+        parts = re.search(r'speeches/((.)[^ ]*( (.)\.)? ([^ ]+))-(\d\d\d\d).txt', file_name.replace('\\','/'))
         full_name = parts.group(1)
         first_name = parts.group(2)
         middle_initial = parts.group(4) or ''
@@ -115,3 +124,5 @@ for m in metrics:
     file_name = name.replace(' ', '_') + '.png'
     g.get_figure().savefig(file_name, dpi=150)
     plt.gcf().clear()
+
+print('End of processing')
