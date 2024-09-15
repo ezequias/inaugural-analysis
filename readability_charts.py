@@ -86,7 +86,7 @@ for r, d, f in os.walk(path):
 records = []
 #sys.argv[1:]: 
 for file_name in files: 
-    with open(file_name, 'r') as myfile:
+    with open(file_name, 'r', encoding='latin-1') as myfile:
         data = myfile.read().replace('\n', ' ')
         # Parse a speech file name of the form: First M. Last-YEAR.txt
         parts = re.search(r'speeches/((.)[^ ]*( (.)\.)? ([^ ]+))-(\d\d\d\d).txt', file_name.replace('\\','/'))
