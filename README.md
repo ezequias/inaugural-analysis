@@ -1,4 +1,4 @@
-## Analysis of US Inaugural Presidential Addresses
+## Analysis of US Inaugural Presidential Addresses 🏛️🇺🇸
 The script and data in this repository are used to analyze
 twelve US inaugural presidential addresses through popular
 common text readability and sentiment analysis metrics.
