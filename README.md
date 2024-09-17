@@ -17,7 +17,7 @@ You can find the results
 >Classifies the text between negative (less than zero) and positive (greater than zero) sentiments
 ![Polarity](Polarity.png)
 ### SMOG Index 
-> Simple Measure of Gobbledygook -  measures its readability as an estimate of the years of education needed to understand it
+> Simple Measure of Gobbledygook -  measures its **readability** as an estimate of the years of education needed to understand it
 ![SMOG Index](SMOG_index.png)
 ### Subjectivity
 >Classifying each sentence as objective or subjective
