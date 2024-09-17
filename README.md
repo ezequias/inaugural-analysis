@@ -13,7 +13,8 @@ You can find the results
 ![Number of words](Number_of_words.png)
 ### Polarity
 ![Polarity](Polarity.png)
-### SMOG Index (Simple Measure of Gobbledygook) measures its readability as an estimate of the years of education needed to understand it
+### SMOG Index 
+#### Simple Measure of Gobbledygook -  measures its readability as an estimate of the years of education needed to understand it
 ![SMOG Index](SMOG_index.png)
 ### Subjectivity
 ![Subjectivity](Subjectivity.png)
