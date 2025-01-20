@@ -5,7 +5,7 @@ common text readability and sentiment analysis metrics.
 You can find the results
 [in this blog post](http://www.spinellis.gr/blog/20170120/).
 
-# Results in 2024
+# Results in 2025
 
 ### Lexical Variety
 >Measures the word richness of a text as the percentage ratio between the text’s unique words and all the words in the text
